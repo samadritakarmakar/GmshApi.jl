@@ -22,7 +22,7 @@ const GMSH_API_VERSION_MAJOR = 4
 const GMSH_API_VERSION_MINOR = 8
 const GMSH_API_VERSION_PATCH = 0
 const libdir = dirname(@__FILE__)
-const libname = Sys.iswindows() ? "gmsh-4.8.dll" : "libgmsh"
+const libname = Sys.iswindows() ? "gmsh-4.8.dll" : "libgmsh.so.4.8"
 import Libdl
 const lib = Libdl.find_library([libname], [libdir])
 
